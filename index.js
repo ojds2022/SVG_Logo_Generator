@@ -13,7 +13,7 @@ function modifyCircles(shapeConstructor) {
     const testing = fs.readFileSync('./examples/circle.svg', 'utf8');
     const modifiedData = testing
         .replace('<text x="100" y="120" font-size="65" text-anchor="middle" fill="white">', `<text x="100" y="120" font-size="65" text-anchor="middle" fill="${shapeConstructor.text_color}">`)
-        .replace('<circle cx="100" cy="100" r="75" fill="green" />', `<circle cx="100" cy="100" r="75" fill="${shapeConstructor.shape_color}" />`)
+        .replace('<circle cx="100" cy="100" r="75" fill="blue" />', `<circle cx="100" cy="100" r="75" fill="${shapeConstructor.shape_color}" />`)
         .replace('SVG', `${shapeConstructor.text}`);
     
     fs.writeFile('./examples/circleLogo.svg', modifiedData, 'utf8', (err) => {            
@@ -30,8 +30,8 @@ function modifyCircles(shapeConstructor) {
 function modifySquares(shapeConstructor) {
     const testing = fs.readFileSync( './examples/square.svg' , 'utf8');
     const modifiedData = testing
-        .replace('<text x="150" y="140" font-size="130" text-anchor="middle" fill="white">', `<text x="150" y="140" font-size="130" text-anchor="middle" fill="${shapeConstructor.text_color}">`)
-        .replace('<rect width="100%" height="100%" fill="red" /> ', `<rect width="100%" height="100%" fill="${shapeConstructor.shape_color}" />`)
+        .replace('<text x="150" y="140" font-size="65" text-anchor="middle" fill="white">', `<text x="150" y="140" font-size="65" text-anchor="middle" fill="${shapeConstructor.text_color}">`)
+        .replace('<rect width="75%" height="75%" fill="yellow" /> ', `<rect width="75%" height="75%" fill="${shapeConstructor.shape_color}" />`)
         .replace('SVG',`${shapeConstructor.text}`);
     
     fs.writeFile('./examples/sqareLogo.svg', modifiedData, 'utf8', (err) => {
@@ -49,7 +49,7 @@ function modifyTriangles(shapeConstructor) {
     const testing = fs.readFileSync( './examples/triangle.svg' , 'utf8');      
     const modifiedData = testing
         .replace('<text x="125" y="150" font-size="60" text-anchor="middle" fill="white">', `<text x="125" y="150" font-size="60" text-anchor="middle" fill="${shapeConstructor.text_color}">`)
-        .replace('<polygon points="123,10 227.8,190 20,190" style="fill:lime" />', `<polygon points="123,10 227.8,190 20,190" style="fill:${shapeConstructor.shape_color}" />`)
+        .replace('<polygon points="123,10 227.8,190 20,190" style="fill:red" />', `<polygon points="123,10 227.8,190 20,190" style="fill:${shapeConstructor.shape_color}" />`)
         .replace('SVG',`${shapeConstructor.text}`);
 
     fs.writeFile('./examples/triangleLogo.svg', modifiedData, 'utf8', (err) => {            
