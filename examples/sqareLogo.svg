@@ -2,5 +2,5 @@
     width="300" height="300"
     xmlns="http://www.w3.org/2000/svg">
     <rect width="75%" height="75%" fill="yellow" /> 
-    <text x="150" y="140" font-size="65" text-anchor="middle" fill="white">SVG</text>
+    <text x="150" y="140" font-size="65" text-anchor="middle" fill="white">XYZ</text>
 </svg>

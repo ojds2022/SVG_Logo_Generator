@@ -34,12 +34,12 @@ function modifySquares(shapeConstructor) {
         .replace('<rect width="100%" height="100%" fill="red" /> ', `<rect width="100%" height="100%" fill="${shapeConstructor.shape_color}" />`)
         .replace('SVG',`${shapeConstructor.text}`);
     
-    fs.writeFile('./examples/logo.svg', modifiedData, 'utf8', (err) => {
+    fs.writeFile('./examples/sqareLogo.svg', modifiedData, 'utf8', (err) => {
         if (err) {
             console.error(err);
             return;
         }
-            console.log(`Generated logo.svg!`);
+            console.log(`Generated squareLogo.svg!`);
     });
 
     return modifiedData;
@@ -52,12 +52,12 @@ function modifyTriangles(shapeConstructor) {
         .replace('<polygon points="123,10 227.8,190 20,190" style="fill:lime" />', `<polygon points="123,10 227.8,190 20,190" style="fill:${shapeConstructor.shape_color}" />`)
         .replace('SVG',`${shapeConstructor.text}`);
 
-    fs.writeFile('./examples/logo.svg', modifiedData, 'utf8', (err) => {            
+    fs.writeFile('./examples/triangleLogo.svg', modifiedData, 'utf8', (err) => {            
         if (err) {
             console.error(err);
             return;
         }
-            console.log(`Generated logo.svg!`);
+            console.log(`Generated triangleLogo.svg!`);
     });
 
     return modifiedData;
