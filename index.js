@@ -3,10 +3,10 @@ const fs = require('fs');
 const shapeSelected = require('./lib/shapes.js');
 
 const questions = [
-    "What three letters do you want in your logo?",
-    "What color should the letters be? Color name or hex code will work.",
+    "What three letters or numbers do you want in your logo?",
+    "What color should the text be? If the color name dosen't work, you can use the hex code.",
     "What shape should your logo be?",
-    "What color should the shape be? Color name or hex code will work."
+    "What color should the shape be? If the color name dosen't work, you can use the hex code."
 ];
 
 function modifyCircles(shapeConstructor) {
