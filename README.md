@@ -12,10 +12,10 @@ Users can quickly create simple SVG logos with customized letters, colors, and s
 - [Questions](#questions)
 
 ## Installation
-Users should first run 'npm i' in the terminal to download all dependencies. 
+Users must first create a package.json file. For package management, npm is used. Users can run 'npm i' in the terminal to install all dependencies. 
 
 ## Usage
-This app is used in the command line terminal. Users can initiate the app by first entering 'node index.js' in the command line. Next, users will be given a series of questions regarding how they would like to style their SVG logo. Once all questions are answered, a customized SVG logo will automatically be created.
+This app is used in the command terminal. Users can initiate the app by first entering 'node index.js' in the command line. Next, users will be given a series of questions regarding how they would like to style their SVG logo. Once all questions are answered, a customized SVG logo will automatically be created.
 
 ## Liscense
 
