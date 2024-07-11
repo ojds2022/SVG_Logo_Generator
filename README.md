@@ -17,6 +17,8 @@ Users must first create a package.json file. For package management, npm is used
 ## Usage
 This app is used in the command terminal. Users can initiate the app by first entering 'node index.js' in the command line. Next, users will be given a series of questions regarding how they would like to style their SVG logo. Once all questions are answered, a customized SVG logo will automatically be created within the 'examples' folder.
 
+A video demonstrating how to use this app can be found here: https://drive.google.com/file/d/1toRsXf6w7rWjNim63ejLempETnIkzbKB/view
+
 ## License
 None.
 
